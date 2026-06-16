@@ -1,0 +1,27 @@
+Raspberry Pi setup for hard_drive_scanner
+
+1. Copy this hard_drive_scanner folder from the USB drive to the Raspberry Pi Desktop.
+
+2. Open Terminal on the Raspberry Pi.
+
+3. Install system packages:
+   sudo apt update
+   sudo apt install python3-pip python3-opencv libzbar0 python3-picamera2
+
+4. Install Python barcode decoder:
+   python3 -m pip install pyzbar zxing-cpp --break-system-packages
+
+5. Test camera still capture:
+   rpicam-still -o test.jpg
+
+6. Go into the project folder:
+   cd ~/Desktop/hard_drive_scanner
+
+7. Run the program:
+   python3 main.py
+
+Notes:
+- If using a USB webcam, plug it into the Raspberry Pi before running the program.
+- If using a Raspberry Pi ribbon camera, the scanner uses rpicam-still capture mode.
+- If using a handheld USB barcode scanner, it acts like a keyboard. Use manual barcode entry when prompted.
+- The SQLite database file is created automatically as hard_drive_inventory.db.
