@@ -1,5 +1,5 @@
 # Hard-Drive-Barcode-Scanner
-#Problem
+Problem
 
 Enterprise hard drives contain multiple barcodes, serial numbers, part numbers, firmware identifiers, and manufacturer-specific labels. One challenge is that hard drive labels are not standardized across manufacturers, models, or generations. Some drives contain damaged labels, faded text, poorly positioned barcodes, or information that cannot always be automatically detected.
 
