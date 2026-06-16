@@ -12,33 +12,33 @@ This project combines barcode scanning, Optical Character Recognition (OCR), and
 Using a webcam or Raspberry Pi camera, the system captures images of hard drive labels, detects and decodes barcodes, extracts nearby text using OCR, and stores the results in a SQLite database. When barcode scans are unsuccessful or information is ambiguous, the user can manually correct or enter data to ensure accuracy. This hybrid approach balances automation with human oversight, making the system practical for real-world inventory management.
 
 ## Technologies Used
-Python
-OpenCV
-Tesseract OCR
-SQLite
-Pyzbar
-ZXing-C++
-Raspberry Pi Camera
-Git & GitHub
+- Python
+- OpenCV
+- Tesseract OCR
+- SQLite
+- Pyzbar
+- ZXing-C++
+- Raspberry Pi Camera
+
 
 ## How It Works
-Capture an image using a webcam or Raspberry Pi camera.
-Detect and decode available barcodes.
-Extract nearby text using OCR.
-Classify scanned information such as serial numbers, part numbers, firmware, WWN, and model numbers.
-Allow the user to verify, correct, or manually enter information when needed.
-Store validated records in a SQLite inventory database.
-Search and manage stored inventory records through the application interface.
+1. Capture an image using a webcam or Raspberry Pi camera.
+2. Detect and decode available barcodes.
+3. Extract nearby text using OCR.
+4. Classify scanned information such as serial numbers, part numbers, firmware, WWN, and model numbers.
+5. Allow the user to verify, correct, or manually enter information when needed.
+6. Store validated records in a SQLite inventory database.
+7. Search and manage stored inventory records through the application interface.
 
 ## Key Features
-Barcode scanning and decoding
-OCR text extraction
-SQLite inventory database
-Duplicate detection and validation
-Support for multiple enterprise hard drive profiles
-Manual correction and data entry tools
-Raspberry Pi deployment support
-Searchable inventory records
+- Barcode scanning and decoding
+- OCR text extraction
+- SQLite inventory database
+- Duplicate detection and validation
+- Support for multiple enterprise hard drive profiles
+- Manual correction and data entry tools
+- Raspberry Pi deployment support
+- Searchable inventory records
 
 ## What I Learned
 
@@ -51,10 +51,10 @@ This project was developed using an iterative testing and validation approach. G
 The use of AI-assisted development helped accelerate implementation while allowing focus on system design, testing, hardware integration, database architecture, and workflow optimization.
 
 ## Future Improvements
-Graphical user interface (GUI)
-Real-time video scanning
-Cloud database integration
-Web-based inventory dashboard
-Improved OCR accuracy
-Support for additional storage devices and hardware profiles
-Automated barcode classification using machine learning
+- Graphical user interface (GUI)
+- Real-time video scanning
+- Cloud database integration
+- Web-based inventory dashboard
+- Improved OCR accuracy
+- Support for additional storage devices and hardware profiles
+- Automated barcode classification using machine learning
